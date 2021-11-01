@@ -10,8 +10,6 @@ import static base.CommonMethods.printToLogFile;
 public class ElementsInteractingMethods extends SetUp {
 
 
-    //CommonMethods commonMethods= new CommonMethods();
-
 /*    public static Boolean status;
 
     *//*---------------------------------------------------------------------

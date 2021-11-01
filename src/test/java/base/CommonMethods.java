@@ -115,7 +115,7 @@ public class CommonMethods {
         urlProps.load(new FileInputStream("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\pageURLs.properties"));
 
         String url = urlProps.getProperty(key);
-        System.out.println("URL is: " + url);
+        //System.out.println("URL is: " + url);
         return url;
     }
 }

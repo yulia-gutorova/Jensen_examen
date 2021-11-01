@@ -1,6 +1,7 @@
 package tests;
 
-import base.interactElements.ElementsInteractingMethods;
+import base.ElementsInteractingMethods;
+//import base.interactElements.ElementsInteractingMethods;
 import base.SetUp;
 
 import org.junit.jupiter.api.*;
@@ -84,7 +85,8 @@ public class InputFormsTest extends SetUp {
     public void test02_isPresent()
     {
         //----------------------------------------------------------------
-        printToLogFile("\n\tMethodName is: ", Thread.currentThread().getStackTrace()[1].getMethodName());
+        printToLogFile("\n\tMethodName is: ",
+                Thread.currentThread().getStackTrace()[1].getMethodName());
         //----------------------------------------------------------------
 
         status = is_element_visible("Logotype");
@@ -130,7 +132,8 @@ public class InputFormsTest extends SetUp {
     public void test04_enterValues() throws IOException {
 
         //--------------------------------------------------------------
-        printToLogFile("\n\tMethodName is: ", Thread.currentThread().getStackTrace()[1].getMethodName());
+        printToLogFile("\n\tMethodName is: ",
+                Thread.currentThread().getStackTrace()[1].getMethodName());
         //--------------------------------------------------------------
 
         send_text_to_element("Enter_value_for_a");
@@ -154,7 +157,8 @@ public class InputFormsTest extends SetUp {
     public void test05_testFailed()
     {
         //----------------------------------------------------------------
-        printToLogFile("\n\tMethodName is: ", Thread.currentThread().getStackTrace()[1].getMethodName());
+        printToLogFile("\n\tMethodName is: ",
+                Thread.currentThread().getStackTrace()[1].getMethodName());
         //----------------------------------------------------------------
 
         Assertions.assertTrue(false);
@@ -167,7 +171,8 @@ public class InputFormsTest extends SetUp {
     public void test06_disabled()
     {
         //----------------------------------------------------------------
-        printToLogFile("\tMethodName is: ", Thread.currentThread().getStackTrace()[1].getMethodName());
+        printToLogFile("\tMethodName is: ",
+                Thread.currentThread().getStackTrace()[1].getMethodName());
         //----------------------------------------------------------------
 
         Assertions.assertTrue(true);

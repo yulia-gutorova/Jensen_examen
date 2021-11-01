@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
 
-//import static base.CommonSteps.write_to_file;
 
 
 public class Listener extends RunListener{
@@ -30,7 +29,7 @@ public class Listener extends RunListener{
 
     public static void main(String[] args) throws IOException {
 
-        System.out.println( "\n-----TestListener-----\n" );
+       // System.out.println( "\n-----TestListener-----\n" );
         write_to_file.println("\n-----TestListener started-----\n" );
         Date date=java.util.Calendar.getInstance().getTime();
         write_to_file.println("\nDate: " + date);
@@ -38,7 +37,7 @@ public class Listener extends RunListener{
         JUnitCore runner = new JUnitCore();
         runner.addListener(new Listener());
         runner.run(testSuite.class);
-        System.out.println("\n-----End of testListener-----\n");
+        //System.out.println("\n-----End of testListener-----\n");
         write_to_file.println("\n-----TestListener ended-----\n" );
     }
 
